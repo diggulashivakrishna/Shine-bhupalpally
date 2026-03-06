@@ -7,25 +7,25 @@ const programs = [
     icon: <FlaskConical className="w-8 h-8" />,
     title: "Science & Innovation",
     desc: "Exploring the laws of nature through hands-on experimentation in our state-of-the-art labs.",
-    image: "src/assets/images/6.jpg"
+    image: "/src/assets/images/6.png"
   },
   {
     icon: <Cpu className="w-8 h-8" />,
     title: "Technology & Coding",
     desc: "Mastering the digital language of the future, from AI to robotics and software development.",
-    image: "src/assets/images/1.png"
+    image: "/src/assets/images/1.png"
   },
   {
     icon: <Palette className="w-8 h-8" />,
     title: "Visual Arts",
     desc: "Nurturing creativity through painting, sculpture, and digital design in our vibrant studios.",
-    image: "src/assets/images/11.png"
+    image: "/src/assets/images/11.png"
   },
   {
     icon: <Music className="w-8 h-8" />,
     title: "Performing Arts",
     desc: "Developing confidence and expression through music, theater, and contemporary dance.",
-    image: "src/assets/images/1.jpg"
+    image: "/src/assets/images/1.png"
   }
 ];
 
@@ -36,7 +36,7 @@ export default function Academics() {
       <section className="relative h-[70vh] flex items-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0">
           <img 
-            src="src\assets\images\1.jpg" 
+            src="/src/assets/images/1.png" 
             alt="Academics" 
             className="w-full h-full object-cover opacity-30 object-center" 
             referrerPolicy="no-referrer" 
@@ -170,7 +170,7 @@ export default function Academics() {
             </div>
 
             <div className="md:col-span-2 p-12 rounded-[50px] bg-white shadow-xl border border-slate-100 relative overflow-hidden group">
-              <img src="src\assets\images\4.jpg" alt="Library" className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity object-top" referrerPolicy="no-referrer" />
+              <img src="/src/assets/images/4.png" alt="Library" className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity object-top" referrerPolicy="no-referrer" />
               <div className="relative z-10">
                 <h3 className="text-3xl font-serif font-bold mb-6">Personalized Learning</h3>
                 <p className="text-lg text-slate-600 leading-relaxed max-w-xl">

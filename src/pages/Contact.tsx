@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Clock, MessageSquare, Loader2, Sparkles, ArrowRight } from 'lucide-react';
 import React, { useState } from 'react';
 
+import contactHeroImage from '../assets/images/1.png';
+
 export default function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -52,7 +54,7 @@ export default function Contact() {
       <section className="relative h-[50vh] flex items-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0">
           <img 
-            src="src\assets\images\5.jpg" 
+            src={contactHeroImage} 
             alt="Contact Us" 
             className="w-full h-full object-cover opacity-30 object-center" 
             referrerPolicy="no-referrer" 

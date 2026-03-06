@@ -8,9 +8,9 @@ export default function About() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,h=800,fit=crop/s9dXtbOXPrDB5Ky1/dsc08595-ORpWRbuNevZL7ypO.JPG" 
+            src="https://images.unsplash.com/photo-1523050335456-c38459a0d317?auto=format&fit=crop&q=80&w=1920" 
             alt="About Shine" 
-            className="w-full h-full object-cover opacity-40 grayscale" 
+            className="w-full h-full object-cover opacity-40 grayscale object-top" 
             referrerPolicy="no-referrer" 
           />
         </div>
@@ -66,9 +66,9 @@ export default function About() {
                 className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl aspect-[4/5]"
               >
                 <img 
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=800,h=1000,fit=crop/s9dXtbOXPrDB5Ky1/dsc08595-ORpWRbuNevZL7ypO.JPG" 
+                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=1200" 
                   alt="School History" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                   referrerPolicy="no-referrer"
                 />
               </motion.div>
@@ -150,9 +150,9 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { name: "Dr. Elizabeth Shine", role: "Principal", img: "https://picsum.photos/seed/shine-p1/600/800" },
-              { name: "Prof. Robert Miller", role: "Vice Principal", img: "https://picsum.photos/seed/shine-p2/600/800" },
-              { name: "Ms. Jennifer Adams", role: "Dean of Students", img: "https://picsum.photos/seed/shine-p3/600/800" }
+              { name: "Dr. Elizabeth Shine", role: "Principal", img: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200" },
+              { name: "Prof. Robert Miller", role: "Vice Principal", img: "https://images.unsplash.com/photo-1523050335456-c38459a0d317?auto=format&fit=crop&q=80&w=1200" },
+              { name: "Ms. Jennifer Adams", role: "Dean of Students", img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" }
             ].map((leader, i) => (
               <motion.div 
                 key={i} 

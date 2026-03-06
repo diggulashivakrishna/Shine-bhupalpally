@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Location from './pages/Location';
 import Academics from './pages/Academics';
+import Enroll from './pages/Enroll';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/location" element={<Location />} />
             <Route path="/academics" element={<Academics />} />
+            <Route path="/enroll" element={<Enroll />} />
           </Routes>
         </main>
         <Footer />

@@ -1,5 +1,6 @@
 import { GraduationCap, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.svg';
 
 export default function Footer() {
   return (
@@ -8,10 +9,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* School Info */}
           <div className="space-y-6">
-            <div className="flex items-center gap-2">
-              <GraduationCap className="w-8 h-8 text-school-orange" />
-              <span className="text-2xl font-serif font-bold text-white">SHINE</span>
-            </div>
+            <Link to="/" className="flex items-center group">
+              <img 
+                src={logo} 
+                alt="Shine Group of Institutions" 
+                className="h-20 object-contain brightness-0 invert" 
+                referrerPolicy="no-referrer"
+              />
+            </Link>
             <p className="text-slate-400 leading-relaxed">
               Empowering students to achieve excellence through innovative learning and a supportive community.
             </p>
@@ -30,7 +35,7 @@ export default function Footer() {
               <li><Link to="/about" className="hover:text-school-orange transition-colors">About Our School</Link></li>
               <li><Link to="/academics" className="hover:text-school-orange transition-colors">Academic Programs</Link></li>
               <li><Link to="/location" className="hover:text-school-orange transition-colors">Campus Location</Link></li>
-              <li><Link to="/contact" className="hover:text-school-orange transition-colors">Admissions</Link></li>
+              <li><Link to="/enroll" className="hover:text-school-orange transition-colors">Admissions</Link></li>
               <li><Link to="#" className="hover:text-school-orange transition-colors">School Calendar</Link></li>
             </ul>
           </div>

@@ -52,9 +52,9 @@ export default function Contact() {
       <section className="relative h-[50vh] flex items-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0">
           <img 
-            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,h=600,fit=crop/s9dXtbOXPrDB5Ky1/dsc08595-ORpWRbuNevZL7ypO.JPG" 
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" 
             alt="Contact Us" 
-            className="w-full h-full object-cover opacity-30" 
+            className="w-full h-full object-cover opacity-30 object-center" 
             referrerPolicy="no-referrer" 
           />
           <div className="absolute inset-0 bg-gradient-to-b from-school-dark/50 to-school-dark"></div>
@@ -75,7 +75,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="py-32">
+      <section className="pt-40 pb-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-24">
             {/* Contact Info - Sticky */}

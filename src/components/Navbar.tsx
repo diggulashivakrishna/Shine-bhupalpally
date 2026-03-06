@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, GraduationCap, Sparkles } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import logo from '../assets/logo.svg';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -35,23 +36,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className={`p-2.5 rounded-2xl transition-all duration-500 ${
-                scrolled ? 'bg-school-orange scale-90' : 'bg-white/10 backdrop-blur-md border border-white/20'
-              }`}>
-                <GraduationCap className={`w-8 h-8 ${scrolled ? 'text-white' : 'text-school-orange'}`} />
-              </div>
-              <div className="flex flex-col">
-                <span className={`text-2xl font-serif font-black tracking-tighter leading-none transition-colors duration-500 ${
-                  scrolled ? 'text-school-dark' : 'text-white'
-                }`}>
-                  SHINE
-                </span>
-                <span className={`text-[10px] font-bold tracking-[0.3em] uppercase leading-none mt-1 transition-colors duration-500 ${
-                  scrolled ? 'text-school-orange' : 'text-white/60'
-                }`}>
-                  Group of Institutions
-                </span>
+            <Link to="/" className="flex items-center group">
+              <div className="relative">
+                <img 
+                  src={logo} 
+                  alt="Shine Group of Institutions" 
+                  className={`transition-all duration-500 object-contain ${
+                    scrolled ? 'h-10' : 'h-16'
+                  }`}
+                  referrerPolicy="no-referrer"
+                />
               </div>
             </Link>
           </div>
@@ -73,7 +67,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="/enroll"
               className={`px-8 py-3.5 rounded-full font-black text-sm uppercase tracking-widest transition-all duration-500 shadow-xl hover:scale-105 active:scale-95 flex items-center gap-2 ${
                 scrolled 
                   ? 'bg-school-orange text-white hover:bg-orange-600' 
@@ -107,10 +101,14 @@ export default function Navbar() {
             className="fixed inset-0 z-[110] bg-school-dark text-white flex flex-col p-10 md:hidden"
           >
             <div className="flex justify-between items-center mb-20">
-              <div className="flex items-center gap-3">
-                <GraduationCap className="w-10 h-10 text-school-orange" />
-                <span className="text-3xl font-serif font-black tracking-tighter">SHINE</span>
-              </div>
+              <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center">
+                <img 
+                  src={logo} 
+                  alt="Shine Group of Institutions" 
+                  className="h-12 object-contain brightness-0 invert" 
+                  referrerPolicy="no-referrer"
+                />
+              </Link>
               <button onClick={() => setIsOpen(false)} className="p-2">
                 <X className="w-10 h-10" />
               </button>
@@ -137,7 +135,7 @@ export default function Navbar() {
 
             <div className="mt-auto">
               <Link
-                to="/contact"
+                to="/enroll"
                 onClick={() => setIsOpen(false)}
                 className="block w-full text-center bg-school-orange text-white py-6 rounded-3xl font-black text-xl uppercase tracking-widest"
               >

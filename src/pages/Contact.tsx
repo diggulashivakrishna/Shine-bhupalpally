@@ -52,7 +52,7 @@ export default function Contact() {
       <section className="relative h-[50vh] flex items-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" 
+            src="src\assets\images\5.jpg" 
             alt="Contact Us" 
             className="w-full h-full object-cover opacity-30 object-center" 
             referrerPolicy="no-referrer" 

@@ -8,7 +8,7 @@ export default function About() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1523050335456-c38459a0d317?auto=format&fit=crop&q=80&w=1920" 
+            src="src\assets\images\10.png" 
             alt="About Shine" 
             className="w-full h-full object-cover opacity-40 grayscale object-top" 
             referrerPolicy="no-referrer" 
@@ -66,7 +66,7 @@ export default function About() {
                 className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl aspect-[4/5]"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=1200" 
+                  src="src\assets\images\2.jpg" 
                   alt="School History" 
                   className="w-full h-full object-cover object-center"
                   referrerPolicy="no-referrer"

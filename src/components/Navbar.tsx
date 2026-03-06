@@ -25,10 +25,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isHome = location.pathname === '/';
+  const isSolid = scrolled || !isHome;
+
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${
-        scrolled 
+        isSolid 
           ? 'bg-white/80 backdrop-blur-xl border-b border-slate-200 py-4' 
           : 'bg-transparent py-8'
       }`}
@@ -42,7 +45,7 @@ export default function Navbar() {
                   src={logo} 
                   alt="Shine Group of Institutions" 
                   className={`transition-all duration-500 object-contain ${
-                    scrolled ? 'h-10' : 'h-16'
+                    isSolid ? 'h-10' : 'h-16'
                   }`}
                   referrerPolicy="no-referrer"
                 />
@@ -57,19 +60,19 @@ export default function Navbar() {
                 key={link.name}
                 to={link.path}
                 className={`relative font-bold text-sm uppercase tracking-widest transition-all duration-500 group ${
-                  scrolled ? 'text-slate-600 hover:text-school-orange' : 'text-white/80 hover:text-white'
+                  isSolid ? 'text-slate-600 hover:text-school-orange' : 'text-white/80 hover:text-white'
                 }`}
               >
                 {link.name}
                 <span className={`absolute -bottom-2 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                  scrolled ? 'bg-school-orange' : 'bg-school-orange'
+                  isSolid ? 'bg-school-orange' : 'bg-school-orange'
                 } ${location.pathname === link.path ? 'w-full' : ''}`}></span>
               </Link>
             ))}
             <Link
               to="/enroll"
               className={`px-8 py-3.5 rounded-full font-black text-sm uppercase tracking-widest transition-all duration-500 shadow-xl hover:scale-105 active:scale-95 flex items-center gap-2 ${
-                scrolled 
+                isSolid 
                   ? 'bg-school-orange text-white hover:bg-orange-600' 
                   : 'bg-school-orange text-white hover:bg-white hover:text-school-orange'
               }`}
@@ -82,7 +85,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 transition-colors ${scrolled ? 'text-slate-900' : 'text-white'}`}
+              className={`p-2 transition-colors ${isSolid ? 'text-slate-900' : 'text-white'}`}
             >
               {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
             </button>

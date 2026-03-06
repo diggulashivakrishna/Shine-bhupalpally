@@ -22,7 +22,7 @@ export default function Home() {
           className="absolute inset-0 z-0"
         >
           <img
-            src="https://images.unsplash.com/photo-1523050335456-c38459a0d317?auto=format&fit=crop&q=80&w=1920"
+            src="src\assets\images\6.jpg"
             alt="Shine Group of Institutions Students"
             className="w-full h-full object-cover scale-110 opacity-60 object-top"
             referrerPolicy="no-referrer"
@@ -118,7 +118,7 @@ export default function Home() {
               whileHover={{ scale: 0.98 }}
               className="md:col-span-2 md:row-span-2 relative rounded-[40px] overflow-hidden group"
             >
-              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" alt="Students with study materials" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src="src\assets\images\1.jpg" alt="Students with study materials" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-10">
                 <span className="text-school-orange font-bold uppercase tracking-widest text-sm mb-2">Academics</span>
                 <h3 className="text-3xl font-serif font-bold text-white">Advanced Research Labs</h3>
@@ -129,7 +129,7 @@ export default function Home() {
               whileHover={{ scale: 0.98 }}
               className="md:col-span-1 md:row-span-1 relative rounded-[40px] overflow-hidden group"
             >
-              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200" alt="Students with DNA model" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src="src\assets\images\2.jpg" alt="Students with DNA model" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
             </motion.div>
 
@@ -150,14 +150,14 @@ export default function Home() {
               whileHover={{ scale: 0.98 }}
               className="md:col-span-1 md:row-span-1 relative rounded-[40px] overflow-hidden group"
             >
-              <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=1200" alt="Students with microscope" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src="src\assets\images\4.jpg" alt="Students with microscope" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
             </motion.div>
 
             <motion.div 
               whileHover={{ scale: 0.98 }}
               className="md:col-span-2 md:row-span-1 relative rounded-[40px] overflow-hidden group"
             >
-              <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=1200" alt="Students looking at specimen" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src="src\assets\images\3.jpg" alt="Students looking at specimen" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex flex-col justify-center p-10">
                 <h3 className="text-3xl font-serif font-bold text-white">Global Community</h3>
                 <p className="text-slate-300 max-w-xs mt-2">Connecting students with international exchange programs.</p>
@@ -217,7 +217,7 @@ export default function Home() {
                 whileInView={{ rotate: 0, scale: 1 }}
                 className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl"
               >
-                <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=1200" alt="Students collaborating" className="w-full h-full object-cover object-center" referrerPolicy="no-referrer" />
+                <img src="src\assets\images\6.jpg" alt="Students collaborating" className="w-full h-full object-cover object-center" referrerPolicy="no-referrer" />
               </motion.div>
               <div className="absolute -top-12 -right-12 w-64 h-64 bg-school-orange/20 rounded-full blur-3xl"></div>
               <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-school-accent/20 rounded-full blur-3xl"></div>
@@ -286,7 +286,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-1/2 relative overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" alt="Join Shine" className="w-full h-full object-cover object-center" referrerPolicy="no-referrer" />
+          <img src="src\assets\images\1.jpg" alt="Join Shine" className="w-full h-full object-cover object-center" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-school-orange/20"></div>
         </div>
       </section>

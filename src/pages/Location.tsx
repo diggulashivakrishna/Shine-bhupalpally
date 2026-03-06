@@ -8,7 +8,7 @@ export default function Location() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1523050335456-c38459a0d317?auto=format&fit=crop&q=80&w=1920" 
+            src="src\assets\images\3.jpg" 
             alt="Campus Location" 
             className="w-full h-full object-cover opacity-40 object-top" 
             referrerPolicy="no-referrer" 
@@ -68,7 +68,7 @@ export default function Location() {
               <div className="aspect-square bg-slate-100 rounded-[60px] overflow-hidden shadow-2xl relative group">
                 {/* Placeholder for real map */}
                 <img 
-                  src="https://picsum.photos/seed/shine-map/1000/1000?blur=2" 
+                  src="src\assets\images\1.jpg" 
                   alt="Map Placeholder" 
                   className="w-full h-full object-cover opacity-50"
                   referrerPolicy="no-referrer"
@@ -154,25 +154,25 @@ export default function Location() {
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-[800px]">
             <div className="md:col-span-8 rounded-[50px] overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=1200" alt="Auditorium" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src="src\assets\images\1.jpg" alt="Auditorium" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
                 <h4 className="text-2xl font-serif font-bold text-white">Grand Auditorium</h4>
               </div>
             </div>
             <div className="md:col-span-4 rounded-[50px] overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" alt="Sports Complex" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src="src\assets\images\4.jpg" alt="Sports Complex" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
                 <h4 className="text-2xl font-serif font-bold text-white">Sports Complex</h4>
               </div>
             </div>
             <div className="md:col-span-4 rounded-[50px] overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200" alt="Library" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src="src\assets\images\6.jpg" alt="Library" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
                 <h4 className="text-2xl font-serif font-bold text-white">Digital Library</h4>
               </div>
             </div>
             <div className="md:col-span-8 rounded-[50px] overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1523050335456-c38459a0d317?auto=format&fit=crop&q=80&w=1200" alt="Cafeteria" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-top" referrerPolicy="no-referrer" />
+              <img src="src\assets\images\1.jpg" alt="Cafeteria" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-top" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
                 <h4 className="text-2xl font-serif font-bold text-white">Student Hub</h4>
               </div>

@@ -30,7 +30,7 @@ async function startServer() {
   app.use(express.json());
 
   // API Route for Enrollment Applications
-  app.post("/api/enroll", async (req, res) => {
+  app.post("/.netlify/functions/enroll", async (req, res) => {
     const formData = req.body;
     const recipientEmail = "diggulashivakrishna@gmail.com";
 
@@ -89,7 +89,7 @@ async function startServer() {
   });
 
   // API Route for Contact Form
-  app.post("/api/contact", async (req, res) => {
+  app.post("/.netlify/functions/contact", async (req, res) => {
     const { name, email, subject, message, type } = req.body;
 
     console.log(`[BACKEND] Processing ${type} inquiry from ${name}...`);

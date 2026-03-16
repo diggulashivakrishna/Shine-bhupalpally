@@ -66,7 +66,7 @@ export default function About() {
                 className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl aspect-[4/5]"
               >
                 <img 
-                  src="/src/assets/images/2.png" 
+                  src="/src/assets/images/2.jpg" 
                   alt="School History" 
                   className="w-full h-full object-cover object-center"
                   referrerPolicy="no-referrer"

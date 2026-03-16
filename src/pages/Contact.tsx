@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Clock, MessageSquare, Loader2, Sparkles, ArrowRight } from 'lucide-react';
 import React, { useState } from 'react';
 
-import contactHeroImage from '../assets/images/1.png';
+import contactHeroImage from '../assets/images/1.jpg';
 
 export default function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
@@ -20,7 +20,7 @@ export default function Contact() {
     setError(null);
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/.netlify/functions/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

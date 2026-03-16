@@ -23,7 +23,7 @@ export default function Enroll() {
     setError(null);
 
     try {
-      const response = await fetch('/api/enroll', {
+      const response = await fetch('/.netlify/functions/enroll', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

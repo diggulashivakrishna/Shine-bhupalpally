@@ -1,5 +1,8 @@
 import { motion } from 'motion/react';
 import { Target, Heart, ShieldCheck, Award, Users, Sparkles, History, Globe } from 'lucide-react';
+import Img10 from '/src/assets/images/10.png';
+import Img2 from '/src/assets/images/2.jpg';
+
 
 export default function About() {
   return (
@@ -8,7 +11,7 @@ export default function About() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/images/10.png" 
+            src={Img10} 
             alt="About Shine" 
             className="w-full h-full object-cover opacity-40 grayscale object-top" 
             referrerPolicy="no-referrer" 
@@ -66,7 +69,7 @@ export default function About() {
                 className="relative z-10 rounded-[60px] overflow-hidden shadow-2xl aspect-[4/5]"
               >
                 <img 
-                  src="/src/assets/images/2.jpg" 
+                  src={Img2}
                   alt="School History" 
                   className="w-full h-full object-cover object-center"
                   referrerPolicy="no-referrer"

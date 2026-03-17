@@ -254,7 +254,7 @@ export default function Enroll() {
 
         <div className="mt-12 text-center text-slate-400 text-sm">
           <p>By submitting this form, you agree to our terms and conditions regarding the admissions process.</p>
-          <p className="mt-2">Need help? Call us at <span className="text-slate-600 font-bold">+91 91607 93528</span></p>
+          <p className="mt-2">Need help? Call us at <span className="text-slate-600 font-bold">+91 98667 76369</span></p>
         </div>
       </div>
     </div>

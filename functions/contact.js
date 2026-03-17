@@ -16,17 +16,14 @@ export const handler = async (event) => {
   try {
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: "diggulashivakrishna@gmail.com",
-      subject: `New Enrollment Application: ${formData.studentName}`,
+      to: "anishetty21@gmail.com",
+      subject: `New Enrollment Application: ${formData.subject}`,
       html: `
         <h2>New Enrollment Application</h2>
-        <p><b>Name:</b> ${formData.studentName}</p>
-        <p><b>DOB:</b> ${formData.dob}</p>
-        <p><b>Grade:</b> ${formData.grade}</p>
-        <p><b>Parent:</b> ${formData.parentName}</p>
+        <p><b>Name:</b> ${formData.name}</p>
         <p><b>Email:</b> ${formData.email}</p>
-        <p><b>Phone:</b> ${formData.phone}</p>
-        <p><b>Address:</b> ${formData.address}</p>
+        <p><b>Subject:</b> ${formData.subject}</p>
+        <p><b>Message:</b> ${formData.message}</p>
       `,
     };
 

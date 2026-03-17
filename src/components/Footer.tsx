@@ -58,15 +58,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-school-orange shrink-0 mt-1" />
-                <span>123 Education Lane, Knowledge City, ST 56789</span>
+                <span>House No:9, 13/1, near Ramalayam Temple, Bhupalpally, Telangana 506169</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-school-orange shrink-0" />
-                <span>+91 91607 93528</span>
+                <span>+91 98667 76369</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-school-orange shrink-0" />
-                <span>diggulashivakrishna@gmail.com</span>
+                <span>anishetty21@gmail.com</span>
               </li>
             </ul>
           </div>

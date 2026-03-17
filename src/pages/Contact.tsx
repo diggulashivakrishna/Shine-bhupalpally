@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Clock, MessageSquare, Loader2, Sparkles, ArrowRight } from 'lucide-react';
 import React, { useState } from 'react';
 
-import contactHeroImage from '../assets/images/1.jpg';
+import contactHeroImage from '/src/assets/images/1.jpg';
 
 export default function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
@@ -88,10 +88,10 @@ export default function Contact() {
                 </h2>
                 <div className="space-y-10">
                   {[
-                    { icon: <MapPin className="w-6 h-6" />, label: "Visit Us", value: "123 Education Lane, Knowledge City, ST 56789" },
-                    { icon: <Phone className="w-6 h-6" />, label: "Call Us", value: "+91 91607 93528" },
-                    { icon: <Mail className="w-6 h-6" />, label: "Email Us", value: "diggulashivakrishna@gmail.com" },
-                    { icon: <Clock className="w-6 h-6" />, label: "Office Hours", value: "Mon - Fri: 8:00 AM - 4:00 PM" }
+                    { icon: <MapPin className="w-6 h-6" />, label: "Visit Us", value: "House No:9, 13/1, near Ramalayam Temple, Bhupalpally, Telangana 506169" },
+                    { icon: <Phone className="w-6 h-6" />, label: "Call Us", value: "+91 98667 76369" },
+                    { icon: <Mail className="w-6 h-6" />, label: "Email Us", value: "anishetty21@gmail.com" },
+                    { icon: <Clock className="w-6 h-6" />, label: "Office Hours", value: "Mon - Sat : 9:00 AM - 6:00 PM" }
                   ].map((item, i) => (
                     <motion.div 
                       key={i}
@@ -115,7 +115,7 @@ export default function Contact() {
                   <div className="absolute top-0 right-0 w-32 h-32 bg-school-orange/10 rounded-full blur-3xl group-hover:bg-school-orange/20 transition-colors"></div>
                   <h3 className="text-2xl font-serif font-bold mb-4 relative z-10">Admissions Office</h3>
                   <p className="text-slate-400 mb-8 relative z-10">Ready to join the Shine family? Our admissions team is ready to guide you through the process.</p>
-                  <a href="mailto:diggulashivakrishna@gmail.com" className="inline-flex items-center gap-2 text-school-orange font-bold hover:gap-4 transition-all relative z-10">
+                  <a href="mailto:anishetty21@gmail.com" className="inline-flex items-center gap-2 text-school-orange font-bold hover:gap-4 transition-all relative z-10">
                     Admission Inquiry <ArrowRight className="w-5 h-5" />
                   </a>
                 </div>

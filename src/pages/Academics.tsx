@@ -19,7 +19,7 @@ const programs = [
     icon: <Palette className="w-8 h-8" />,
     title: "Visual Arts",
     desc: "Nurturing creativity through painting, sculpture, and digital design in our vibrant studios.",
-    image: "/src/assets/images/11.jpg"
+    image: "/src/assets/images/11.png"
   },
   {
     icon: <Music className="w-8 h-8" />,

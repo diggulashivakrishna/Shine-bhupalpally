@@ -40,10 +40,10 @@ export default function Location() {
               </h2>
               <div className="space-y-12">
                 {[
-                  { icon: <MapPin className="w-8 h-8" />, label: "Address", value: "123 Education Lane, Knowledge City, ST 56789" },
-                  { icon: <Phone className="w-8 h-8" />, label: "Phone", value: "+91 91607 93528" },
-                  { icon: <Mail className="w-8 h-8" />, label: "Email", value: "diggulashivakrishna@gmail.com" },
-                  { icon: <Clock className="w-8 h-8" />, label: "Office Hours", value: "Mon - Fri: 8:00 AM - 4:00 PM" }
+                  { icon: <MapPin className="w-8 h-8" />, label: "Address", value: "House No:9, 13/1, near Ramalayam Temple, Bhupalpally, Telangana 506169" },
+                  { icon: <Phone className="w-8 h-8" />, label: "Phone", value: "+91 98667 76369" },
+                  { icon: <Mail className="w-8 h-8" />, label: "Email", value: "anishetty21@gmail.com" },
+                  { icon: <Clock className="w-8 h-8" />, label: "Office Hours", value: "Mon - Sat : 9:00 AM - 6:00 PM" }
                 ].map((item, i) => (
                   <motion.div 
                     key={i}

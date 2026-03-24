@@ -1,10 +1,17 @@
 import { motion } from 'motion/react';
 import { BookOpen, FlaskConical, Palette, Music, Cpu, Languages, GraduationCap, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Img1 from '/src/assets/images/1.jpg';
-import Img11 from '/src/assets/images/11.png';
+import Img1 from '/src/assets/images/students_microscope.png';
+import Img11 from '/src/assets/images/students_culture2.jpeg';
 import Img6 from '/src/assets/images/6.jpg';
-import Img4 from '/src/assets/images/4.jpg';
+import Img4 from '/src/assets/images/students_dance.jpeg';
+import Img8 from '/src/assets/images/students_karate5.jpeg';
+import Img5 from '/src/assets/images/students_robo.png';
+import Img7 from '/src/assets/images/students_lab2.png';
+import I1 from '/src/assets/images/students_gd.jpeg';
+import I2 from '/src/assets/images/students_gd2.jpeg';
+import I3 from '/src/assets/images/students_groups.jpeg';
+import I4 from '/src/assets/images/students_group.jpeg';
 
 
 const programs = [
@@ -12,13 +19,13 @@ const programs = [
     icon: <FlaskConical className="w-8 h-8" />,
     title: "Science & Innovation",
     desc: "Exploring the laws of nature through hands-on experimentation in our state-of-the-art labs.",
-    image: Img6
+    image: Img7
   },
   {
     icon: <Cpu className="w-8 h-8" />,
     title: "Technology & Coding",
     desc: "Mastering the digital language of the future, from AI to robotics and software development.",
-    image: Img1
+    image: Img5
   },
   {
     icon: <Palette className="w-8 h-8" />,
@@ -43,7 +50,7 @@ export default function Academics() {
           <img 
             src={Img1} 
             alt="Academics" 
-            className="w-full h-full object-cover opacity-30 object-center" 
+            className="w-full h-full object-cover opacity-40 object-center" 
             referrerPolicy="no-referrer" 
           />
           <div className="absolute inset-0 bg-gradient-to-r from-school-dark via-school-dark/50 to-transparent"></div>
@@ -139,10 +146,7 @@ export default function Academics() {
               </div>
               <div className="mt-12 flex -space-x-4">
                 {[
-                  "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=100",
-                  "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=100",
-                  "https://images.unsplash.com/photo-1523050335456-c38459a0d317?auto=format&fit=crop&q=80&w=100",
-                  "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=100"
+                  I1, I2, I3, I4
                 ].map((img, i) => (
                   <div key={i} className="w-16 h-16 rounded-full border-4 border-white overflow-hidden">
                     <img src={img} alt="Student" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
@@ -175,7 +179,7 @@ export default function Academics() {
             </div>
 
             <div className="md:col-span-2 p-12 rounded-[50px] bg-white shadow-xl border border-slate-100 relative overflow-hidden group">
-              <img src={Img4} alt="Library" className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity object-top" referrerPolicy="no-referrer" />
+              <img src={Img8} alt="Library" className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-20 transition-opacity object-top" referrerPolicy="no-referrer" />
               <div className="relative z-10">
                 <h3 className="text-3xl font-serif font-bold mb-6">Personalized Learning</h3>
                 <p className="text-lg text-slate-600 leading-relaxed max-w-xl">

@@ -1,6 +1,6 @@
 import { GraduationCap, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.webp';
 
 export default function Footer() {
   return (
@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a href="#" className="hover:text-school-orange transition-colors"><Facebook className="w-5 h-5" /></a>
               <a href="#" className="hover:text-school-orange transition-colors"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="hover:text-school-orange transition-colors"><Instagram className="w-5 h-5" /></a>
+              <a href="https://www.instagram.com/shine_high_school_2.0?igsh=MWF3YWM2bW5rNGs1cg==" target="_blank" rel="noopener noreferrer" className="hover:text-school-orange transition-colors"><Instagram className="w-5 h-5" /></a>
               <a href="#" className="hover:text-school-orange transition-colors"><Linkedin className="w-5 h-5" /></a>
             </div>
           </div>

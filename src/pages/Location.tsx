@@ -4,14 +4,19 @@ import { MapPin, Phone, Mail, Clock, Navigation, Train, Bus, Car, ArrowRight, Sp
 import Img6 from '/src/assets/images/6.jpg';
 import Img1 from '/src/assets/images/1.jpg';
 import Img2 from '/src/assets/images/2.jpg';
-import Img3 from '/src/assets/images/3.jpg';
 import Img4 from '/src/assets/images/4.jpg';
+import Img3 from '/src/assets/images/students_group.jpeg';
+import Img7 from '/src/assets/images/students_groups.jpeg';
+import Img8 from '/src/assets/images/students_gd.jpeg';
+import Img11 from '/src/assets/images/students_computer.jpeg';
+import Img9 from '/src/assets/images/students_gd2.jpeg';
+import Img10 from '/src/assets/images/students_wanderla.jpeg';
 
 export default function Location() {
   return (
     <div className="bg-white">
       {/* Header - Immersive */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-school-dark">
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0 z-0">
           <img 
             src={Img3} 
@@ -72,27 +77,32 @@ export default function Location() {
             
             <div className="relative">
               <div className="aspect-square bg-slate-100 rounded-[60px] overflow-hidden shadow-2xl relative group">
-                {/* Placeholder for real map */}
-                <img 
-                  src={Img1} 
-                  alt="Map Placeholder" 
-                  className="w-full h-full object-cover opacity-50"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-12 bg-white/80 backdrop-blur-xl rounded-[40px] border border-white shadow-2xl max-w-sm">
-                    <div className="w-16 h-16 rounded-2xl bg-school-orange text-white flex items-center justify-center mx-auto mb-6">
-                      <Navigation className="w-8 h-8" />
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.843657474246!2d79.85943981116664!3d18.443970299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a331d8284e0a5cf%3A0x196c98cc55d8ff1d!2sShine%20High%20school%202.0%2C%20IIT%20and%20Medical%20Foundation%2C%20Bhupalpally!5e0!3m2!1sen!2sin!4v1710748467000!5m2!1sen!2sin"
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="grayscale hover:grayscale-0 transition-all duration-700"
+                ></iframe>
+                <div className="absolute bottom-8 left-8 right-8 pointer-events-none">
+                  <div className="p-8 bg-white/90 backdrop-blur-xl rounded-[30px] border border-white shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <div className="flex items-center gap-4 mb-2">
+                      <div className="w-10 h-10 rounded-xl bg-school-orange text-white flex items-center justify-center">
+                        <Navigation className="w-5 h-5" />
+                      </div>
+                      <h3 className="text-xl font-serif font-bold">Campus Location</h3>
                     </div>
-                    <h3 className="text-2xl font-serif font-bold mb-4">Interactive Map</h3>
-                    <p className="text-slate-600 mb-8">Open in Google Maps for turn-by-turn directions to our campus.</p>
+                    <p className="text-slate-600 text-sm mb-4">Bhupalpally, Telangana 506169, India</p>
                     <a 
-                      href="https://www.google.com/maps/place/Shine+High+school+2.0,+IIT+and+Medical+Foundation,+Bhupalpally/@18.444117,79.8611202,109m/data=!3m1!1e3!4m14!1m7!3m6!1s0x3a331d8284e0a5cf:0x196c98cc55d8ff1d!2sShine+High+school+2.0,+IIT+and+Medical+Foundation,+Bhupalpally!8m2!3d18.4439703!4d79.8616285!16s%2Fg%2F11z20w52r0!3m5!1s0x3a331d8284e0a5cf:0x196c98cc55d8ff1d!8m2!3d18.4439703!4d79.8616285!16s%2Fg%2F11z20w52r0?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" 
+                      href="https://www.google.com/maps/place/Shine+High+school+2.0,+IIT+and+Medical+Foundation,+Bhupalpally/@18.4439703,79.8616285,17z" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-8 py-4 bg-school-orange text-white rounded-full font-bold hover:scale-105 transition-transform"
+                      className="inline-flex items-center gap-2 text-school-orange font-bold text-sm pointer-events-auto hover:underline"
                     >
-                      Get Directions <ArrowRight className="w-5 h-5" />
+                      Open in Google Maps <ArrowRight className="w-4 h-4" />
                     </a>
                   </div>
                 </div>
@@ -104,7 +114,7 @@ export default function Location() {
       </section>
 
       {/* Travel Information - Bento Grid */}
-      <section className="py-32 bg-slate-50">
+      {/* <section className="py-32 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
             <h2 className="text-5xl md:text-7xl font-serif font-bold text-slate-900 mb-6 italic">How to Reach Us</h2>
@@ -144,7 +154,7 @@ export default function Location() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Campus Gallery - Immersive */}
       <section className="py-32 bg-white overflow-hidden">
@@ -160,25 +170,25 @@ export default function Location() {
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-[800px]">
             <div className="md:col-span-8 rounded-[50px] overflow-hidden group relative">
-              <img src={Img1} alt="Auditorium" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src={Img6} alt="Auditorium" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
-                <h4 className="text-2xl font-serif font-bold text-white">Grand Auditorium</h4>
+                <h4 className="text-2xl font-serif font-bold text-white">Campus</h4>
               </div>
             </div>
             <div className="md:col-span-4 rounded-[50px] overflow-hidden group relative">
-              <img src={Img4} alt="Sports Complex" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src={Img8} alt="Sports Complex" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
-                <h4 className="text-2xl font-serif font-bold text-white">Sports Complex</h4>
+                <h4 className="text-2xl font-serif font-bold text-white">Assembly Hall</h4>
               </div>
             </div>
             <div className="md:col-span-4 rounded-[50px] overflow-hidden group relative">
-              <img src={Img6} alt="Library" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src={Img11} alt="Library" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
                 <h4 className="text-2xl font-serif font-bold text-white">Digital Library</h4>
               </div>
             </div>
             <div className="md:col-span-8 rounded-[50px] overflow-hidden group relative">
-              <img src={Img1} alt="Cafeteria" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-top" referrerPolicy="no-referrer" />
+              <img src={Img10} alt="Cafeteria" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-top" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-10">
                 <h4 className="text-2xl font-serif font-bold text-white">Student Hub</h4>
               </div>

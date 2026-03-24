@@ -3,7 +3,9 @@ import { ArrowRight, BookOpen, Users, Trophy, Star, Sparkles, GraduationCap, Arr
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import Img6 from '/src/assets/images/6.jpg';
-import Img1 from '/src/assets/images/1.jpg';
+import Img1 from '/src/assets/images/students_lab2.png';
+import Img5 from '/src/assets/images/students_robo.png';
+import Img7 from '/src/assets/images/students_kids2.jpeg';
 import Img2 from '/src/assets/images/2.jpg';
 import Img3 from '/src/assets/images/3.jpg';
 import Img4 from '/src/assets/images/4.jpg';
@@ -29,7 +31,7 @@ export default function Home() {
           className="absolute inset-0 z-0"
         >
           <img
-            src={Img6}
+            src={Img3}
             alt="Shine Group of Institutions Students"
             className="w-full h-full object-cover scale-110 opacity-60 object-top"
             referrerPolicy="no-referrer"
@@ -164,7 +166,7 @@ export default function Home() {
               whileHover={{ scale: 0.98 }}
               className="md:col-span-2 md:row-span-1 relative rounded-[40px] overflow-hidden group"
             >
-              <img src={Img3} alt="Students looking at specimen" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
+              <img src={Img7} alt="Students looking at specimen" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 object-center" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex flex-col justify-center p-10">
                 <h3 className="text-3xl font-serif font-bold text-white">Global Community</h3>
                 <p className="text-slate-300 max-w-xs mt-2">Connecting students with international exchange programs.</p>
@@ -245,12 +247,12 @@ export default function Home() {
             {[
               {
                 text: "Shine High School didn't just teach me subjects; it taught me how to think and how to lead. The mentorship I received here shaped my career path in ways I never imagined.",
-                author: "Sarah Johnson",
-                role: "Class of 2018, Lead Researcher"
+                author: "Anishetty Bhanu Chander",
+                role: "Correspondent, Shine High School, Bhupalpally"
               },
               {
                 text: "The environment here is electric. Every day is a new opportunity to create something meaningful. My son has grown so much in confidence and character.",
-                author: "Michael Chen",
+                author: "Kommu Ravi Kumaar",
                 role: "Parent of Grade 10 Student"
               }
             ].map((t, i) => (
@@ -293,7 +295,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-1/2 relative overflow-hidden">
-          <img src={Img1} alt="Join Shine" className="w-full h-full object-cover object-center" referrerPolicy="no-referrer" />
+          <img src={Img5} alt="Join Shine" className="w-full h-full object-cover object-center" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-school-orange/20"></div>
         </div>
       </section>

@@ -1,14 +1,17 @@
 import { motion } from 'motion/react';
 import { Target, Heart, ShieldCheck, Award, Users, Sparkles, History, Globe } from 'lucide-react';
-import Img10 from '/src/assets/images/10.png';
-import Img2 from '/src/assets/images/2.jpg';
+import Img10 from '/src/assets/images/students_culture.jpeg';
+import Img2 from '/src/assets/images/students_science.png';
+import Chairman from '/src/assets/images/chairman.png';
+import Correspondent from '/src/assets/images/correspondent.png';
+import Principal from '/src/assets/images/principal.png';
 
 
 export default function About() {
   return (
     <div className="bg-white">
       {/* Header - Editorial Style */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-school-dark">
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-school-dark">
         <div className="absolute inset-0 z-0">
           <img 
             src={Img10} 
@@ -153,9 +156,9 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { name: "Dr. Elizabeth Shine", role: "Principal", img: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=1200" },
-              { name: "Prof. Robert Miller", role: "Vice Principal", img: "https://images.unsplash.com/photo-1523050335456-c38459a0d317?auto=format&fit=crop&q=80&w=1200" },
-              { name: "Ms. Jennifer Adams", role: "Dean of Students", img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1200" }
+              { name: "Mugala Kumar, M.A., LL.B", role: "Chairman", img: Chairman , message: "Providing visionary leadership and strategic direction to build an institution that empowers future generations." },
+              { name: "Anishetty Bhanu Chander", role: "Correspondent", img: Correspondent , message: "Committed to strengthening academic excellence and ensuring a nurturing environment for holistic student development." },
+              { name: "Anishetty Sravanthi", role: "Principal", img: Principal , message: "Leading with dedication to inspire learning, discipline, and growth in every student." }
             ].map((leader, i) => (
               <motion.div 
                 key={i} 
@@ -167,7 +170,9 @@ export default function About() {
                 <div className="relative overflow-hidden rounded-[50px] aspect-[3/4] mb-8 shadow-2xl">
                   <img src={leader.img} alt={leader.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-school-orange/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                    <p className="text-white text-sm leading-relaxed">Dedicated to fostering an environment where every student can shine brighter than ever before.</p>
+                    <p className="text-white text-sm leading-relaxed">
+                      {leader.message}
+                    </p>
                   </div>
                 </div>
                 <h3 className="text-3xl font-serif font-bold text-slate-900 mb-2">{leader.name}</h3>

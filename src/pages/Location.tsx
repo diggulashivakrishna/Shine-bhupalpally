@@ -1,16 +1,16 @@
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, Navigation, Train, Bus, Car, ArrowRight, Sparkles } from 'lucide-react';
 
-import Img6 from '/src/assets/images/6.jpg';
-import Img1 from '/src/assets/images/1.jpg';
-import Img2 from '/src/assets/images/2.jpg';
-import Img4 from '/src/assets/images/4.jpg';
-import Img3 from '/src/assets/images/students_group.jpeg';
-import Img7 from '/src/assets/images/students_groups.jpeg';
-import Img8 from '/src/assets/images/students_gd.jpeg';
-import Img11 from '/src/assets/images/students_computer.jpeg';
-import Img9 from '/src/assets/images/students_gd2.jpeg';
-import Img10 from '/src/assets/images/students_wanderla.jpeg';
+import Img6 from '/public/images/6.avif';
+import Img1 from '/public/images/1.avif';
+import Img2 from '/public/images/2.avif';
+import Img4 from '/public/images/4.avif';
+import Img3 from '/public/images/students_group.avif';
+import Img7 from '/public/images/students_groups.avif';
+import Img8 from '/public/images/students_gd.avif';
+import Img11 from '/public/images/students_computer.avif';
+import Img9 from '/public/images/students_gd2.avif';
+import Img10 from '/public/images/students_wanderla.avif';
 
 export default function Location() {
   return (

@@ -1,6 +1,6 @@
 import { GraduationCap, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.webp';
+import logo from '/public/images/logo.webp';
 
 export default function Footer() {
   return (

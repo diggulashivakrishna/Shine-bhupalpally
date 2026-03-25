@@ -1,10 +1,10 @@
 import { motion } from 'motion/react';
 import { Target, Heart, ShieldCheck, Award, Users, Sparkles, History, Globe } from 'lucide-react';
-import Img10 from '/src/assets/images/students_culture.jpeg';
-import Img2 from '/src/assets/images/students_science.png';
-import Chairman from '/src/assets/images/chairman.png';
-import Correspondent from '/src/assets/images/correspondent.png';
-import Principal from '/src/assets/images/principal.png';
+import Img10 from '/public/images/students_culture.avif';
+import Img2 from '/public/images/students_science.avif';
+import Chairman from '/public/images/chairman.avif';
+import Correspondent from '/public/images/correspondent.avif';
+import Principal from '/public/images/principal.avif';
 
 
 export default function About() {

@@ -2,13 +2,13 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowRight, BookOpen, Users, Trophy, Star, Sparkles, GraduationCap, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
-import Img6 from '/src/assets/images/6.jpg';
-import Img1 from '/src/assets/images/students_lab2.png';
-import Img5 from '/src/assets/images/students_robo.png';
-import Img7 from '/src/assets/images/students_kids2.jpeg';
-import Img2 from '/src/assets/images/2.jpg';
-import Img3 from '/src/assets/images/3.jpg';
-import Img4 from '/src/assets/images/4.jpg';
+import Img6 from '/public/images/6.avif';
+import Img1 from '/public/images/students_lab2.avif';
+import Img5 from '/public/images/students_robo.avif';
+import Img7 from '/public/images/students_kids2.avif';
+import Img2 from '/public/images/2.avif';
+import Img3 from '/public/images/3.avif';
+import Img4 from '/public/images/4.avif';
 
 
 

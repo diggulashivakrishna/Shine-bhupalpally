@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Clock, MessageSquare, Loader2, Sparkles, ArrowRight } from 'lucide-react';
 import React, { useState } from 'react';
 
-import contactHeroImage from '/src/assets/images/students_banner.png';
+import contactHeroImage from '/public/images/students_banner.avif';
 
 export default function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });

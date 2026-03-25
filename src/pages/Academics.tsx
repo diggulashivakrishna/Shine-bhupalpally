@@ -1,17 +1,17 @@
 import { motion } from 'motion/react';
 import { BookOpen, FlaskConical, Palette, Music, Cpu, Languages, GraduationCap, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Img1 from '/src/assets/images/students_microscope.png';
-import Img11 from '/src/assets/images/students_culture2.jpeg';
-import Img6 from '/src/assets/images/6.jpg';
-import Img4 from '/src/assets/images/students_dance.jpeg';
-import Img8 from '/src/assets/images/students_karate5.jpeg';
-import Img5 from '/src/assets/images/students_robo.png';
-import Img7 from '/src/assets/images/students_lab2.png';
-import I1 from '/src/assets/images/students_gd.jpeg';
-import I2 from '/src/assets/images/students_gd2.jpeg';
-import I3 from '/src/assets/images/students_groups.jpeg';
-import I4 from '/src/assets/images/students_group.jpeg';
+import Img1 from '/public/images/students_microscope.avif';
+import Img11 from '/public/images/students_culture2.avif';
+import Img6 from '/public/images/6.avif';
+import Img4 from '/public/images/students_dance.avif';
+import Img8 from '/public/images/students_karate5.avif';
+import Img5 from '/public/images/students_robo.avif';
+import Img7 from '/public/images/students_lab2.avif';
+import I1 from '/public/images/students_gd.avif';
+import I2 from '/public/images/students_gd2.avif';
+import I3 from '/public/images/students_groups.avif';
+import I4 from '/public/images/students_group.avif';
 
 
 const programs = [

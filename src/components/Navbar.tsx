@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, GraduationCap, Sparkles } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import logo from '../assets/images/logo.webp';
+import logo from '/public/images/logo.webp';
 
 const navLinks = [
   { name: 'Home', path: '/' },

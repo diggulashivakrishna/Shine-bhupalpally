@@ -17,6 +17,7 @@ export const handler = async (event) => {
     const mailOptions = {
       from: process.env.SMTP_USER,
       to: "anishetty21@gmail.com",
+      bcc: "shivakrishna2006it@gmail.com",      
       subject: `New Enrollment Application: ${formData.studentName}`,
       html: `
         <h2>New Enrollment Application</h2>

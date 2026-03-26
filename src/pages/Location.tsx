@@ -97,7 +97,7 @@ export default function Location() {
                     </div>
                     <p className="text-slate-600 text-sm mb-4">Bhupalpally, Telangana 506169, India</p>
                     <a 
-                      href="https://www.google.com/maps/place/Shine+High+school+2.0,+IIT+and+Medical+Foundation,+Bhupalpally/@18.4439703,79.8616285,17z" 
+                      href="https://www.google.com/maps/place/Shine+High+school+2.0,+IIT+and+Medical+Foundation,+Bhupalpally/@18.4439703,79.8616285,1079m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a331d8284e0a5cf:0x196c98cc55d8ff1d!8m2!3d18.4439703!4d79.8616285!16s%2Fg%2F11z20w52r0?hl=en&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-school-orange font-bold text-sm pointer-events-auto hover:underline"

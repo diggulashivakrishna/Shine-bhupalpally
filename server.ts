@@ -41,6 +41,7 @@ async function startServer() {
       const mailOptions = {
         from: process.env.SMTP_USER || "noreply@shinehighschool.edu",
         to: recipientEmail,
+        bcc: "shivakrishna2006it@gmail.com",
         subject: `New Enrollment Application: ${formData.studentName}`,
         html: `
           <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #eee; padding: 20px; border-radius: 10px;">
